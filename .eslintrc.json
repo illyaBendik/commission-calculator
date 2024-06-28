@@ -1,0 +1,20 @@
+{
+  "extends": ["airbnb-base", "prettier", "plugin:node/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "node/no-missing-import": "off",
+    "class-methods-use-this": "off",
+    "import/extensions": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "extensions": [".js"],
+        "map": [["@", "."]]
+      }
+    }
+  },
+  "ignorePatterns": ["*.test.js"]
+}
